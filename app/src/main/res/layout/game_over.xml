@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/game_over_bg">
+    <!-- Game Over Image Centered at Top -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/game_over"/>
+    <!-- Score Text Centered Below Game Over -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:textSize="36sp"
+        android:textColor="@android:color/white"
+        android:alpha="0.7"
+        android:textStyle="bold"
+        android:shadowColor="#80000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"/>
+
+    <!-- Highest Score Text Centered Below Score -->
+    <TextView
+        android:id="@+id/tvPersonalBest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
+        android:alpha="0.7"
+        android:textStyle="bold"
+        android:shadowColor="#80000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"/>
+    <!-- Restart Button at Bottom Left -->
+    <ImageView
+        android:id="@+id/buttonRestart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/restart"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:focusable="true"/>
+    <!-- Exit Button at Bottom Right -->
+    <ImageView
+        android:id="@+id/buttonExit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/exit"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:focusable="true"/>
+</RelativeLayout>
